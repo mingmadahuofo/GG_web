@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	// #创建函数对象 function 
+	var fun = new Function("console.log(1);");
+	fun();
+	// #使用函数声明来创建一个函数
+	function fun2(){
+		console.log(2);
+	}
+	fun2();
+	// #使用函数表达式进行创建一个函数
+	var fun3 = function(){
+		console.log(3);
+	}
+	fun3();
+	var sum = function(a,b){
+		console.log(a +b);
+	}
+	sum(1,2);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
