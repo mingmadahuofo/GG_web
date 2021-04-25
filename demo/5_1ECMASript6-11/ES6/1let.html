@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es-let</title>
+    <script>
+        // 声明变量 
+        let a;
+        let b,c,d;
+        let e = 100;
+        let f = true;
+        let g ="123";
+        let h = [];
+        //1. 变量不能重复声明
+        let star = '小林';  
+        let star = '小红';
+        // 重复声明会报错
+        //2. 块级作用域  全局 ，函数，eval
+        // if else while for 如果用let 声明  也是块级作用域
+        // let 声明变量也是块级作用域
+        {
+            var gie ='123';
+            let gil = "zyq";
+        }
+        console.log(gil);//会报错，因为是块级作用域
+        console.log(gie);//不会报错 因为var 会向全局window 添加属性
+
+        // 3.不存在变量提升
+        console.log(song);
+        let song = "daren";// 会报错
+        // 4.不影响作用域链
+        {
+            let sc = "school";
+            function fn(){
+                console.log(sc);
+            }
+            fn();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
